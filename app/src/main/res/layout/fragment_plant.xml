@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivPlantThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pic_height"
+                android:scaleType="center" />
+
+            <RelativeLayout
+                android:id="@+id/layoutName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivPlantThumbnail"
+                android:layout_margin="@dimen/all_margin">
+
+                <TextView
+                    android:id="@+id/tvPlantNameCn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvPlantNameEn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPlantNameCn" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutAlsoKnown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutName"
+                android:layout_margin="@dimen/all_margin">
+
+                <TextView
+                    android:id="@+id/tvPlantAlsoKnownTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/also_known" />
+
+                <TextView
+                    android:id="@+id/tvPlantAlsoKnown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPlantAlsoKnownTitle" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutBrief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutAlsoKnown"
+                android:layout_margin="@dimen/all_margin">
+
+                <TextView
+                    android:id="@+id/tvPlantBriefTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/brief" />
+
+                <TextView
+                    android:id="@+id/tvPlantBrief"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPlantBriefTitle" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutFeature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutBrief"
+                android:layout_margin="@dimen/all_margin">
+
+                <TextView
+                    android:id="@+id/tvPlantFeatureTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feature" />
+
+                <TextView
+                    android:id="@+id/tvPlantFeature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPlantFeatureTitle" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutFunctions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutFeature"
+                android:layout_margin="@dimen/all_margin">
+
+                <TextView
+                    android:id="@+id/tvPlantFunctionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/function" />
+
+                <TextView
+                    android:id="@+id/tvPlantFunctions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPlantFunctionTitle" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutLastUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutFunctions"
+                android:layout_margin="@dimen/all_margin">
+
+                <TextView
+                    android:id="@+id/tvPlantLastUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_update" />
+
+                <TextView
+                    android:id="@+id/tvPlantUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tvPlantLastUpdate" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
